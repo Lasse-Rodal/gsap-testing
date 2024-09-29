@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    opacity: 0;
+    background-color: #282c34;
+    color: white;
+}
+
+.section, .section-two, .section-three, .section-four {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+    background-color: #282c34;
+    text-align: center;
+}
+
+.section:nth-child(even) {
+    background-color: #61dafb;
+    color: black;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    max-width: 600px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background-color: #61dafb;
+    color: #282c34;
+    cursor: pointer;
+}
