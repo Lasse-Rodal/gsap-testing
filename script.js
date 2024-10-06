@@ -51,3 +51,11 @@ gsap.from('.section-four', {
         toggleActions: 'play none none reverse'
     }
 });
+
+const box = document.getElementById('box');
+const button = document.getElementById('bounceButton');
+
+button.addEventListener('click', () => {
+  gsap.to(box, { duration: 1, y: -100, ease: "bounce.out" });
+  gsap.to(box, { duration: 1, y: 0, delay: 1, ease: "bounce.out" });
+});
